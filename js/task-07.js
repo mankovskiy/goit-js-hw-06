@@ -12,7 +12,7 @@ const refs = {
 };
 
 refs.fontSizeControl.addEventListener("input", onCurrentSize);
-
+refs.textContentSize.style.fontSize = `${refs.fontSizeControl.value}px`;
 function onCurrentSize(event) {
   const textSize = event.currentTarget.value;
   refs.textContentSize.style.fontSize = `${textSize}px`;

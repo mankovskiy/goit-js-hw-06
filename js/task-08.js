@@ -28,6 +28,7 @@ function onFormSubmit(event) {
   if (formElements.email.value === "" || formElements.password.value === "") {
     const message = "Заполни все поля";
     alert(message);
+    return;
   }
 
   const mail = formElements.email.value;
